@@ -1,0 +1,1304 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	/* [disabled]display: block; */
+	/* [disabled]float: right; */
+	margin-bottom: 20px;
+	/* [disabled]margin-left: 0.9em; */
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	10;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	/*width: 89.3454%;*/
+	/*width: 600px;   then 478px*/
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #572b7a;
+	/* [disabled]margin: 8px; */
+	padding-bottom: 0px;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+#Links {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LeftCol {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#RightCol {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #572b7a;
+	height: 4.5em;
+	color: #FFF;
+}
+#TopContent {
+	clear: none;
+	/* [disabled]float: left; */
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-top: 10px;
+}
+#Login {
+	clear: both;
+	float: right;
+	/* [disabled]margin-left: 1.8518%; */
+	width: auto;
+	display: block;
+	margin-right: 1em;
+}
+#RightText {
+	clear: none;
+	float: left;
+	margin-left: 0.9em;
+	width: 100%;
+	display: block;
+	margin-right: 0.9em;
+	padding: .5em;
+}
+#LeftText {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: 100%;
+	display: block;
+}
+#LeftContent {
+	clear: both;
+	float: none;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: 0.5em;
+}
+#CenterContent {
+	clear: both;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: .5em;
+}
+#RightContent {
+	clear: both;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: 0.5em;
+}
+#LineRunner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#TopRunner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#HeaderPicture {
+	clear: both;
+	/* [disabled]float: left; */
+	margin-left: 0px;
+	width: auto;
+	display: block;
+}
+#Gallery {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Test2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row1A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row1B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row1C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-bottom: 1.5em;
+}
+#Row1D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row2A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row2B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row2C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-bottom: 1.5em;
+}
+#Row2D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row3A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row3B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row3C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-bottom: 1.5em;
+}
+#Row3D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row4A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row4B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row4C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-bottom: 1.5em;
+}
+#Row4D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row5A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row5B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row5C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+	margin-bottom: 1.5em;
+}
+#Row5D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row6A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row6B {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row6C {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#Row6D {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: auto;
+	display: block;
+}
+#LeftColumn {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#RightColumn {
+	clear: none;
+	float: left;
+	/* [disabled]margin-left: 1.8518%; */
+	width: 100%;
+	display: block;
+}
+#Row1E {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: 100%;
+	display: block;
+}
+#Row1F {
+	clear: none;
+	float: left;
+	margin-left: 1.8518%;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: auto;
+	/* [disabled]padding-left: 0.5284%; */
+	/* [disabled]padding-right: 0.5284%; */
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Links {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+}
+#LeftCol {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#RightCol {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #572b7a;
+	color: #FFF;
+	height: 5em;
+}
+#TopContent {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: 480;
+	display: block;
+}
+#Login {
+	clear: both;
+	float: right;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-right: 1em;
+}
+#RightText {
+	clear: none;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: 0.5em;
+}
+#LeftText {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 440px;
+}
+#LeftContent {
+	clear: both;
+	float: none;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: 0.5em;
+}
+#CenterContent {
+	clear: both;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: 0.5em;
+}
+#RightContent {
+	clear: both;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	margin-right: 0.9em;
+	padding: .5em;
+}
+#LineRunner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#TopRunner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #000;
+}
+#HeaderPicture {
+	clear: both;
+	float: left;
+	/* [disabled]margin-left: 0; */
+	width: 100%;
+	display: block;
+}
+#Gallery {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Test2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row1A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row1B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row1C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row1D {
+	clear: none;
+	float: left;
+	margin-left: 2em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row2A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row2B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row2C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row2D {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row3A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row3B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row3C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row3D {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row4A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row4B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row4C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row4D {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row5A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row5B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row5C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row5D {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#Row6A {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: auto;
+	display: block;
+}
+#Row6B {
+	clear: none;
+	float: left;
+	margin-left: 1em;
+	width: auto;
+	display: block;
+}
+#Row6C {
+	clear: both;
+	float: left;
+	margin-left: .9em;
+	width: auto;
+	display: block;
+}
+#Row6D {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: auto;
+	display: block;
+	margin-bottom: 1em;
+}
+#LeftColumn {
+	clear: both;
+	float: left;
+	/* [disabled]margin-left: 0.9em; */
+	width: auto;
+	display: block;
+	/* [disabled]margin-right: 0.9em; */
+	padding: 0.5em;
+}
+#RightColumn {
+	clear: none;
+	float: left;
+	margin-left: -0.9em;
+	width: 100%;
+	display: block;
+	/* [disabled]margin-right: 0.9em; */
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+}
+#Row1E {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: 100%;
+	display: block;
+}
+#Row1F {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: auto;
+	max-width: 1024px;
+	padding-left: 0%;
+	padding-right: 0%;
+	margin: auto;
+	margin-top: 10px;
+	min-width: 1024px;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 39.4495%;
+	display: block;
+	margin-top: 20px;
+	/* [disabled]margin-bottom: 30px; */
+}
+#Links {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 750px;
+	display: block;
+}
+#LeftCol {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 29.3577%;
+	display: block;
+	/* [disabled]margin-top: 10px; */
+	font-size: 12px;
+	/* [disabled]position: absolute; */
+}
+#RightCol {
+	clear: none;
+	float: left;
+	margin-left: 0.9em;
+	width: auto;
+	display: block;
+	/* [disabled]margin-top: 30px; */
+	/* [disabled]border-top-width: 1px; */
+	/* [disabled]border-top-style: dotted; */
+	/* [disabled]border-left-width: 1px; */
+	/* [disabled]border-left-style: dotted; */
+	margin-right: 0.9em;
+	padding: 0.5em;
+	/* [disabled]position: relative; */
+	/* [disabled]top: -200px; */
+}
+#Footer {
+	clear: both;
+	/* [disabled]float: left; */
+	/* [disabled]width: 100%; */
+	text-align: right;
+	font-size: 1.1em;
+	background-color: #572b7a;
+	color: #FFF;
+	bottom: auto;
+	height: 4em;
+	margin-right: 6em;
+	/* [disabled]margin-bottom: 2em; */
+}
+#TopContent {
+	/* [disabled]clear: none; */
+	/* [disabled]float: right; */
+	margin-left: 0.9174%;
+	width: auto;
+	/* [disabled]display: block; */
+	/* [disabled]height: auto; */
+}
+#Login {
+	clear: none;
+	float: right;
+	/* [disabled]margin-left: 20%; */
+	width: 19.266%;
+	display: block;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 1em;
+}
+#RightText {
+	clear: none;
+	/* [disabled]float: left; */
+	/* [disabled]margin-left: 2em; */
+	width: auto;
+	/* [disabled]display: block; */
+	font-size: 18px;
+	/* [disabled]margin-right: 1em; */
+	/* [disabled]padding-top: 1em; */
+}
+#LeftText {
+	clear: left;
+	/* [disabled]float: left; */
+	margin-left: 1em;
+	width: auto;
+	display: block;
+	padding: 0px;
+	position: relative;
+	left: 13px;
+	top: -150px;
+	/* [disabled]margin-right: 1px; */
+}
+#LeftContent {
+	margin-left: 0.9em;
+	width: auto;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	margin-right: 0.9em;
+	/* [disabled]border: thin dotted #333; */
+	clear: both;
+	display: block;
+	margin-top: 1em;
+	/* [disabled]font-style: italic; */
+}
+#CenterContent {
+	clear: none;
+	float: left;
+	margin-left: 0.7em;
+	width: 29%;
+	display: block;
+	border: thin dotted #333;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	margin-right: .7em;
+}
+#RightContent {
+	clear: none;
+	float: left;
+	margin-left: .7em;
+	width: 29%;
+	display: block;
+	padding: 0.5em;
+	border: thin dotted #333;
+	margin-bottom: 0.7em;
+}
+#LineRunner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#TopRunner {
+	clear: both;
+	float: left;
+	width: auto;
+	display: block;
+	background-color: #000;
+	height: 43px;
+}
+#HeaderPicture {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Gallery {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Test2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Row1A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row1B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row1C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: auto;
+	display: block;
+}
+#Row1D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: auto;
+	display: block;
+}
+#Row2A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row2B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row2C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row2D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row3A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row3B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row3C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row3D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row4A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row4B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row4C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row4D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row5A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row5B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row5C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row5D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row6A {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
+	display: block;
+}
+#Row6B {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row6C {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#Row6D {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: 20%;
+	display: block;
+}
+#LeftColumn {
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 40%;
+	display: block;
+	margin-bottom: 2%;
+}
+#RightColumn {
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 45%;
+	display: block;
+	padding: .5em;
+}
+#Row1E {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: auto;
+	display: block;
+}
+#Row1F {
+	clear: none;
+	float: left;
+	margin-left: 0.9174%;
+	width: auto;
+	display: block;
+}
+}
+.ThreeDottedBordered {
+	display: block;
+	padding: 0.5em;
+	/* [disabled]clear: left; */
+	margin-right: 0.9em;
+	margin-left: 0.9em;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	width: auto;
+	float: left;
+	margin-bottom: .9em;
+}
+presentationGridPicture {
+}
+.presentationGridPicture {
+	width: auto;
+	float: left;
+	display: block;
+	margin-left: 1em;
+}
+.presentationGridTitle {
+	width: auto;
+	display: block;
+	float: left;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+.presentationGridButton {
+	display: block;
+	float: left;
+	width: auto;
+	margin-left: 1em;
+	padding: 0.5em 0.75em;
+	cursor: pointer;
+	text-decoration: none;
+	background: #EEE;
+}
+.presentationGridButtonBelow {
+	display: block;
+	width: auto;
+	padding: 0.5em 0.75em;
+	margin-left: 1em;
+	/* [disabled]background: #EEE; */
+	text-decoration: none;
+	cursor: pointer;
+	clear: none;
+	float: left;
+	/* [disabled]margin-bottom: 1.5em; */
+}
+.divFloatLeft {
+	/* [disabled]display: block; */
+	/* [disabled]width: auto; */
+	/* [disabled]float: left; */
+	/* [disabled]clear: none; */
+	/* [disabled]margin-right: 1em; */
+	margin-bottom: 3em;
+}
+.divFloatRight {
+	float: left;
+	/* [disabled]width: auto; */
+	display: block;
+	/* [disabled]clear: none; */
+}
+.bottomSpacer {
+	margin-bottom: 2.5em;
+}
+
+ New Slide show test 
+
+
+ End of slide show test 
+.PurpleButton_01 {
+	color: #572b7a;
+}
+.FilmReelStyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	display: block;
+}
+.PicNoMargin {
+	margin: 0px;
+}
+.RedRoundedCorners {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border: 3px solid #800000;
+	padding: 5px;
+	background-color: #FF0;
+	display: block;
+	/* [disabled]float: left; */
+	width: 250px;
+	/* [disabled]margin-right: auto; */
+	/* [disabled]margin-left: auto; */
+	margin-bottom: 1em;
+	/* [disabled]clear: both; */
+}
+.RedBorder {
+	border: 3px solid #800000;
+	padding: 5px;
+	display: block;
+	/* [disabled]float: left; */
+	/* [disabled]width: 500px; */
+	margin-left: 10px;
+	margin-bottom: 1em;
+}
+.PresentationTitleText {
+	font-size: 1.3em;
+	vertical-align: middle;
+}
+.TD_Border {
+	border-radius: 6px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #572b7a;
+	border-right-color: #9966FF;
+	border-bottom-color: #9966FF;
+	border-left-color: #572b7a;
+	font-family: sans-serif;
+	padding: 6px;
+}
+
+/* >>> TEST CODE >>>>   */
+.PurpPurchButton {
+	-moz-box-shadow:inset 1px 1px 7px 5px #e184f3;
+	-webkit-box-shadow:inset 1px 1px 7px 5px #e184f3;
+	box-shadow:inset 1px 1px 7px 5px #e184f3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #572B7A), color-stop(1, #572B7A) );
+	background:-moz-linear-gradient( center top, #c123de 5%, #572B7A 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#572B7A', endColorstr='#572B7A');
+	background-color:#c123de;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:22px;
+	font-weight:bold;
+	padding:30px 34px;
+	text-decoration:none;
+	text-shadow:2px 3px 0px #8d0fa6;
+}.PurpPurchButton:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a20dbd), color-stop(1, #c123de) );
+	background: -moz-linear-gradient( center top, #a20dbd 5%, #c123de 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de');
+	background-color: #a20dbd;
+}.PurpPurchButton:active {
+	position:relative;
+	top:1px;
+}
+a.PurpPurchButton:link {
+	color:#ffffff;
+} 
+a.PurpPurchButton:visited {
+	color:#ffffff;
+} 

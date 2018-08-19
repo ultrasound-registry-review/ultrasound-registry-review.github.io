@@ -1,0 +1,699 @@
+@charset "utf-8";
+/*
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * Dreamweaver modifications:
+ * 1. Commented out selection highlight
+ * 2. Removed media queries section (we add our own in a separate file)
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body {
+	margin: 0;
+	font-size: 1em;
+	/* [disabled]line-height: 1.231; */
+	background-color: #FFF;
+	z-index: 1;
+	visibility: visible;
+}
+
+body, button, input, select, textarea {
+	font-family: sans-serif;
+	color: #000;
+}
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+/* Dreamweaver: uncomment these if you do want to customize the selection highlight
+ *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ */
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+	outline: 0;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong {
+
+
+}
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: .2em solid #572b7a;
+	/* [disabled]margin: 1em 0; */
+	padding: 0;
+}
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol {
+	list-style-position: inside;
+	/* [disabled]margin-top: 1em; */
+	margin-right: 0;
+	margin-bottom: 1em;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+ul li 
+{
+	margin-top: 0px;
+	margin: 0px;
+	padding: 0px;
+	/* Second line text indent */
+	text-indent: -1em;
+	/* margin-left: 0.5em; */
+}
+
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure {
+	width: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form {
+	margin: 0;
+}
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+	cursor: pointer;
+	clear: left;
+	float: left;
+	width: 45%;
+	padding-right: 10px;
+}
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 1;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	color: #FFF;
+}
+td {
+	vertical-align: top;
+	color: #000;
+}
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+ @media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+	font-size: 1em;
+}
+  h2, h3 { page-break-after: avoid; }
+}
+.gridContainer.clearfix #RightCol #RightText p a {
+	font-size: 18px;
+}
+h1 {
+	font-family: Georgia, "MS Serif", "Times New Roman";
+	font-size: 2.2em;
+	font-weight: 700;
+	font-variant: small-caps;
+	text-transform: none;
+	margin-bottom: 0px;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.5em;
+	font-weight: 550;
+}
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 700;
+}
+.ImageTest {
+	border: 2px double #000;
+	padding: 5px;
+	border-bottom-left-radius: 20px;
+}
+.ImageText {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.pictureTest {
+	font-size: .8em;
+	background-color: #f9f9f9;
+	padding: 3px;
+	border: 1px solid #cccccc;
+}
+/* TEST CODE for pictures*/
+div.figure {
+	float: left;
+	width: 30%;
+	border: thin silver solid;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+div.figure p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+/* END OF TEST CODE */
+/* TEST CODE for News Ticker*/
+ul#ticker {
+	width: 280px;
+	height: 163px;   /* Hight of window? */
+	overflow: hidden;
+	list-style-type: none;
+} 
+ul#ticker  li {    
+  width: 260px;    
+  height: 130px;    /* Spacing between? <or> space of boxes? */ 
+  padding: 10px;    
+} 
+ul#ticker li a {    
+color: #666;
+} 
+ul#ticker li span {    
+display: block;    
+color: #06C;
+}
+/* 
+The ul, which has “ticker” as an id, must have a fixed height which corresponds to the height of every li multiplied by the number of elements to display: if for example, the height of every li is 100 px and I want to display only two, then the height of ul will be 200px (100×2) and so on.
+ In our case, the height of the ul corresponds to the height of every li, since we are going to display one at max, in order to highlight every single news.
+ In addition to defining a height, it is extremely important that our ul has the overflow property set on hidden, in such a way that all the content which exceeds the defined height is not displayed.
+ */
+/* END OF TEST CODE */
+/* TEST CODE for Slide Show*/
+* {
+	margin: 0;
+	/* [disabled]text-indent: -2em; */
+	padding: 0;
+}
+/* body {font:12px Verdana,Arial; color:#555; background:#222} */
+p {
+	line-height: 1.4;
+	margin-bottom: 12px;
+	color: #000;
+} 
+#wrapper {
+	width: 320px;
+	/*width: 578px;*/
+	/* [disabled]margin: 75px auto; */
+}
+
+.slider-button {
+	float: left;
+	width: 32px;
+	cursor: pointer;
+	font-size: 30px;
+	height: 32px;
+	line-height: 26px;
+	margin-top: 134px;
+	text-align: center;
+	color: #888;
+	background: #fff
+}
+.slider-button:hover {color:#222}
+
+.pagination {
+	float: left;
+	list-style: none;
+	height: 23px;
+	margin: 15px 0 0 32px;
+	display: none
+}
+.pagination li {float:left; cursor:pointer; height:12px; width:12px; background:#666; border-radius:6px; margin-right:4px}
+.pagination li:hover {background:#777; color:#000}
+li.current {background:#888}
+
+/* TinyFader */
+
+#slideshow {
+	float: left;
+	/* [disabled]width: 400px; */
+	min-width: 320px;
+	/* [disabled]height: 240px; */
+	min-height: 192px;
+	border: 2px solid #fff;
+	background: #fff;
+}
+#slides {
+	position: relative;
+	/* [disabled]width: 400px; */
+	min-width: 320px;
+	/* [disabled]height: 240px; */
+	min-height: 192px;
+	/* [disabled]list-style: none; */
+	overflow: hidden;
+	float: left;
+	margin: 0px;
+	padding: 0;
+}
+	
+/* #slides li {width:400px; height:240px} */
+#slides li {min-width:320px; min-height:192px}
+.fader-slide {opacity:0; position:absolute}
+.fader-fade {opacity:1; -webkit-transition:opacity .4s; -moz-transition:opacity .4s; transition:opacity .4s}
+
+/* Slide Styling */
+
+#content {width:464px; height:270px; padding:15px 18px 15px 18px; background:#fff}
+#content h1 {font:22px Georgia,Verdana; margin-bottom:15px; color:#036}
+
+#caption {background:#fff; position:relative}
+#caption div {position:absolute; bottom:0; left:0; width:464px; padding:15px 18px 10px 18px; background:#000; background:rgba(0,0,0,.7)}
+#caption h2 {font:18px Georgia,Verdana; margin-bottom:6px; color:#eee}
+#caption p {line-height:1.4; color:#aaa}
+/* END OF TEST CODE */
+/* Center Slide Show Div */
+.DivCenter
+{
+	/*
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 338px;
+	margin-top: 50px;
+	margin-left: -290px;
+	*/
+	width: 500px;
+	/* [disabled]height: 300px; */
+	top: 50%;
+	left: 50%;
+	margin: auto;
+
+}
+
+/*
+=====================================================
+   Author: Michael Solis
+   ========================================================================== */
+.RedText {
+	color: #F00;
+	font-weight: 600;
+}
+.FloatLeft {
+	clear: left;
+	float: left;
+	width: auto;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+.FloatLeft_DwnSpace {
+	clear: left;
+	float: left;
+	width: auto;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-bottom: 15px;
+}
+.FloatRight_30 {
+	clear: left;
+	float: right;
+	width: auto;
+}
+.PositionRelative_25px {
+	position: relative;
+	left: 20px;
+	/* [disabled]display: block; */
+	width: auto;
+	/* [disabled]clear: left; */
+	/* [disabled]float: right; */
+}
+.PositionRelative_25px_NoWrap {
+	position: relative;
+	left: 20px;
+	/* [disabled]display: block; */
+	width: 60%;
+	height: 40px;
+	float: inherit;
+	display:inline-block
+	/* [disabled]clear: left; */
+	/* [disabled]float: right; */
+}
+
+.GrayButton_01 {
+	border: 1px solid #CCC;
+	display: inline-block;
+}
+.GrayButton_01 a {
+	display: block;
+	cursor: pointer;
+	background-color: #EEE;
+	padding: 0.5em 0.75em;
+	color: #333;
+	text-decoration: none;
+	width: auto;
+}
+.GrayButton_01 a:hover {
+	background-color: #572b7a;
+	color: #FFF;
+	width: auto;
+}
+.RowOf4Items {
+	float: left;
+	width: 20%;
+	clear: none;
+}
+.DivContainer_90 {
+	width: 90%;
+}
+.tabLeft40px {
+	margin-left: 40px;
+}
+.CenterItem {
+	display: inline-block;
+}
+.PurpleText {
+	color: #572B7A;
+}
+figcaption {
+	display: block;
+	width: 43.2ex;
+	margin-top: -20px;
+	margin-bottom: 1em;
+	border: thin solid #000;
+	padding: 0.5ex;
+}
+.Caption_Width400 {
+	width: 400px;
+	display: block;
+}
+.BlueText {
+	color: #03C;
+}
+.gridContainer.clearfix #Footer .CopyrightText {
+	text-align: center;
+}
+
+.GrayButton_02 {
+	border: 1px solid #CCC;
+	display: inline-block;
+}
+.GrayButton_02 a {
+	display: block;
+	cursor: pointer;
+	background-color: #EEE;
+	padding: 0.5em 0.75em;
+	color: #333;
+	text-decoration: none;
+	width: auto;
+}
+.GrayButton_02 a:hover {
+	background-color: #572b7a;
+	color: #FFF;
+	width: auto;
+}
+
+.PurpleButton_02 {
+	border: 2px solid #CCC;
+	display: inline-block;
+}
+.PurpleButton_02 a {
+	display: block;
+	cursor: pointer;
+	background-color: #572b7a;
+	padding: 0.7em 1.45em;
+	text-decoration: none;
+	width: auto;
+	font-size: 20px;
+}
+.PurpleButton_02 a:link {
+	color: #FFFFFF;
+}
+.PurpleButton_02 a:visited {
+	color: #FFFFFF;
+}
+.PurpleButton_02 a:hover {
+	background-color: #EEE;
+	color: #572b7a;
+	width: auto;
+}
+
+.PurpleButton_01 {
+	border: 1px solid #000;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	width: auto;
+}
+.PurpleButton_01 a {
+	display: block;
+	cursor: pointer;
+	background-color: #572b7a;
+	padding: 0.5em 0.75em;
+	/* [disabled]color: #666; */
+	text-decoration: none;
+	width: auto;
+}
+.PurpleButton_01 a:hover {
+	background-color: #93F;
+	color: #000;
+	width: auto;
+}
+.QuestionaireLabel {
+	width: 17%;
+}
